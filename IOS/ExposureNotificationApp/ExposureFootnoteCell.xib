@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="S0r-cT-AgK" customClass="ExposureFootnoteCell" customModule="ExposureNotificationApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S0r-cT-AgK" id="U5I-Wh-Ggt">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This report has been saved to this app and you can access it at any time in the future." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4w-6D-BOB">
+                        <rect key="frame" x="20" y="11" width="374" height="44"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="e4w-6D-BOB" secondAttribute="bottom" id="FpY-YH-g3a"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="e4w-6D-BOB" secondAttribute="trailing" id="OyS-Q0-zgu"/>
+                    <constraint firstItem="e4w-6D-BOB" firstAttribute="leading" secondItem="U5I-Wh-Ggt" secondAttribute="leadingMargin" id="xTv-DN-Jlw"/>
+                    <constraint firstItem="e4w-6D-BOB" firstAttribute="top" secondItem="U5I-Wh-Ggt" secondAttribute="topMargin" id="yoC-gc-bnm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="footnoteLabel" destination="e4w-6D-BOB" id="biD-HA-z92"/>
+            </connections>
+            <point key="canvasLocation" x="142" y="141"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,46 @@
+{
+  "id": "fa72f387-39d2-4dba-b386-fe5f99b6a90c",
+  "name": "Default Welcome Intent - exposed",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "VDH te recomienda que contactes a tu médico de atención primaria o a tu departamento de salud local o, si actualmente eres estudiante universitario, a tu centro de salud estudiantil. Para más información sobre lugares donde te pueden realizar la prueba de laboratorio, monitorear tus sintomas, pasos para reducir el riesgo de exposición e información adicional sobre prevención, por favor visita el sitio web COVIDCHECK. https://www.vdh.virginia.gov/coronavirus/covidcheck/"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "VDH recommends that you contact your primary care physician, your local health department , or your Student Health Center if you are a current college student. For more information on testing locations, monitoring your symptoms, reducing exposure risks and other prevention information, please visit COVIDCHECK. https://www.vdh.virginia.gov/coronavirus/covidcheck"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}

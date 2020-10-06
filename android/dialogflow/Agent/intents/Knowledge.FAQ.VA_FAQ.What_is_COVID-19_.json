@@ -1,0 +1,35 @@
+{
+  "id": "24588c85-4f12-454a-88dd-bef48da81b69",
+  "name": "Knowledge.FAQ.VA_FAQ.What_is_COVID-19?",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "COVID-19 (“Coronavirus Disease 2019”) is an infectious respiratory disease caused by a new (novel) coronavirus that initially emerged in Wuhan Provence, China in December 2019."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

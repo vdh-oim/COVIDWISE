@@ -1,0 +1,47 @@
+{
+  "id": "26713006-f06d-4122-aef9-d99f5557d81b",
+  "parentId": "5a143b37-0556-45b5-a480-8dfebddce8ff",
+  "rootParentId": "5a143b37-0556-45b5-a480-8dfebddce8ff",
+  "name": "Symptoms - no",
+  "auto": true,
+  "contexts": [
+    "Symptoms-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Symptoms.Symptoms-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Your answers indicate that you may have COVID19 symptoms. However most COVID-19 cases can be managed at home. Only severe symptoms require hospital treatment. Please self quarantine at home and visit us at www.yourpublichealthdept.com for more information on keeping safe."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Tracing</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+
+<body onload="init('{{ value }}')">
+    <style>
+        #main-wrapper .container{
+      width:98%;
+      margin: 0px;
+    }
+    .chatInput input{
+      position:fixed;
+      bottom:2%;
+      background: white;
+      border-bottom: 0px;
+      margin: 0px;
+      width:100%;
+    }
+    .chatInput {
+      position: relative;
+    }
+    body {
+      margin: 0;
+      background: white;
+    }
+    form {
+      margin: 0;
+    }
+		
+    .clearfix {
+        clear: both;
+      }
+    .parentDiv, .leftParentDiv{
+      display:flex;
+    }
+    .inputSuggest a {
+      display: inline-block;
+      padding: 6px 10px;
+      background: #5a5a5a;
+      margin: 7px;
+      border-radius: 5px;
+    }
+    
+    div#suggest-input {
+      text-align: center;
+    }
+    #suggest-input p{
+    color:#333;
+    text-align:center;
+    font-weight: bold;
+    font-size: 17px;
+    }
+    .chatSection {
+      background: white;
+      border-radius:5px;
+    }
+    .inputSuggest a {
+      color: #fff;
+    }
+    .card-panel{
+      max-width: calc(100% - 35px);
+      padding: 15px !important;
+      font-size: 16px;
+      background-color: white ;
+      border-radius: 5px;
+      position: relative;
+      overflow-wrap: break-word;
+    }
+    .btn-panel{
+      float: left;
+      padding: 6px;
+      font-size: 16px;
+      background: lightgray;
+      margin: 7px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      border-color: #D3D3D3;
+      border-width: 1px;
+      border-style: solid;
+      color:black;
+    }
+    .btn-panel:active{
+      background: lightgray;
+    }
+    .start-panel{
+      float: left;
+      padding: 6px;
+      font-size: 16px;
+      background: lightgray;
+      margin: 7px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      border-color: #D3D3D3;
+      border-width: 1px;
+      border-style: solid;
+      color:black;
+    }
+    .start-panel:active{
+      background: lightgray;
+    }
+    .ChatDivSec {
+      padding:0px 10px;
+      height: 90%;
+    }
+	a{
+	color : #0059E8;
+	}
+    div#main-wrapper {
+      margin-top: 25px;
+    }
+    #ChattingSec{
+      overflow-y: scroll;
+    }
+  </style>
+    <div id="main-wrapper">
+        <div class="container">
+            <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                <div class="col s5 chatSection" style="height:100vh;width:100vw;">
+                    <div class="" style="width: 100%; height: 100%;">
+                        <div class="ChatDivSec" id="ChattingSec">
+                            <div id="result" class="dev">
+                            </div>
+                            <div id="suggest-input" class="input">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <script defer src="layout.js"></script>
+</body>
+
+</html>

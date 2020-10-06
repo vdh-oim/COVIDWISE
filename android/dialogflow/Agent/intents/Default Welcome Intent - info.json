@@ -1,0 +1,46 @@
+{
+  "id": "bb29fe74-1771-458d-bc2e-b58433ed9704",
+  "name": "Default Welcome Intent - info",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Para más información sobre COVID-19, estrategias de prevención, y opciones para realizarte la prueba en el estado de Virginia, por favor visita el sitio web de VDH para COVID-19. https://www.vdh.virginia.gov/coronavirus/ \n\u003cbr\u003e\nLos estudiantes universitarios deben adicionalmente comunicarse con sus respectivos Centros de Salud Estudiantil para obtener las últimas recomendaciones relacionadas con COVID dentro del campus.\n\u003cbr\u003e\nPara más información sobre COVIDWISE y obtener respuestas a las Preguntas Más Frecuentes, por favor visita la página Preguntas y Respuestas COVIDWISE o tap en el siguiente enlace COVIDWISE FAQ"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "To learn more about COVID-19, prevention strategies, and testing options throughout Virginia, please visit the VDH COVID-19 website https://www.vdh.virginia.gov/coronavirus/ \n\u003cbr\u003e\nCollege students should also contact their respective Student Health Centers for the latest COVID-related recommendations within their campus communities. \n\u003cbr\u003e\nTo learn more about COVIDWISE and to get answers to Frequently Asked Questions, please visit the COVIDWISE FAQ."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}

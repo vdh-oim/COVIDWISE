@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020 Google LLC
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <ImageButton
+      android:id="@android:id/home"
+      style="?attr/borderlessButtonStyle"
+      android:layout_width="?attr/actionBarSize"
+      android:layout_height="match_parent"
+      android:background="?attr/selectableItemBackgroundBorderless"
+      android:src="?attr/homeAsUpIndicator" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:gravity="center"
+      android:text="@string/main_toolbar_text"
+      android:layout_marginLeft="-35dp"
+      android:textAppearance="?attr/textAppearanceHeadline6" />
+
+  </LinearLayout>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:isScrollContainer="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:paddingHorizontal="@dimen/padding_large">
+
+      <TextView
+        android:id="@+id/share_exposure_view_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceHeadline4" />
+
+<!--      <TextView-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/padding_normal"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/positive_test_description"-->
+<!--        android:textAppearance="?attr/textAppearanceSubtitle1" />-->
+
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:text="@string/share_review_positive_test"
+        android:textAppearance="?attr/textAppearanceBody1" />
+
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:text="@string/share_review_positive_test_covid"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="@color/covid_color" />
+
+      <include layout="@layout/horizontal_divider" />
+
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:text="@string/submission_date"
+        android:textAppearance="?attr/textAppearanceBody1" />
+
+      <TextView
+        android:id="@+id/test_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="?attr/colorControlNormal" />
+
+    </LinearLayout>
+
+  </ScrollView>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_normal"
+    android:orientation="vertical"
+    android:background="?android:attr/colorBackground"
+    android:elevation="20dp">
+
+    <Button
+      android:id="@+id/positive_diagnosis_share_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="@dimen/padding_normal"
+      android:backgroundTint="@color/otpview_color"/>
+
+    <Button
+      android:id="@+id/positive_diagnosis_delete_button"
+      style="@style/Widget.MaterialComponents.Button.TextButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="@dimen/padding_normal"
+      android:textColor="@color/delete"
+      android:text="@string/btn_delete_positive" />
+
+  </LinearLayout>
+
+</LinearLayout>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <ImageButton
+      android:id="@android:id/home"
+      style="?attr/borderlessButtonStyle"
+      android:layout_width="?attr/actionBarSize"
+      android:layout_height="match_parent"
+      android:background="?attr/selectableItemBackgroundBorderless"
+      android:src="?attr/homeAsUpIndicator" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:gravity="center"
+      android:text="@string/main_toolbar_text"
+      android:layout_marginLeft="-35dp"
+      android:textAppearance="?attr/textAppearanceHeadline6" />
+
+  </LinearLayout>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:isScrollContainer="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:paddingHorizontal="@dimen/padding_large">
+
+      <TextView
+        android:id="@+id/share_exposure_view_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceHeadline4" />
+
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:gravity="center"
+        android:text="@string/positive_test_description"
+        android:textAppearance="?attr/textAppearanceSubtitle1" />
+
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:text="@string/share_review_positive_test"
+        android:textAppearance="?attr/textAppearanceBody1" />
+
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:text="@string/share_review_positive_test_covid"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="?attr/colorControlNormal"/>
+
+      <include layout="@layout/horizontal_divider" />
+
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:text="@string/submission_date"
+        android:textAppearance="?attr/textAppearanceBody1" />
+
+      <TextView
+        android:id="@+id/test_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="?attr/colorControlNormal" />
+
+    </LinearLayout>
+
+  </ScrollView>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_normal"
+    android:orientation="vertical"
+    android:background="?android:attr/colorBackground"
+    android:elevation="20dp">
+
+    <Button
+      android:id="@+id/positive_diagnosis_share_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="@dimen/padding_normal" />
+
+    <Button
+      android:id="@+id/positive_diagnosis_delete_button"
+      style="@style/Widget.MaterialComponents.Button.TextButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="@dimen/padding_normal"
+      android:textColor="@color/delete"
+      android:text="@string/btn_delete_positive" />
+
+  </LinearLayout>
+
+</LinearLayout>-->
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <ImageButton
+      android:id="@android:id/home"
+      style="?attr/borderlessButtonStyle"
+      android:layout_width="?attr/actionBarSize"
+      android:layout_height="match_parent"
+      android:background="?attr/selectableItemBackgroundBorderless"
+      android:src="?attr/homeAsUpIndicator" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:gravity="center"
+      android:text="@string/main_toolbar_text"
+      android:layout_marginLeft="-35dp"
+      android:textAppearance="?attr/textAppearanceHeadline6" />
+
+  </LinearLayout>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:isScrollContainer="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:paddingHorizontal="@dimen/padding_large">
+
+      <TextView
+        android:id="@+id/share_exposure_view_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceHeadline4" />
+
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:gravity="center"
+        android:text="@string/positive_test_description"
+        android:textAppearance="?attr/textAppearanceSubtitle1" />
+
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:text="@string/share_review_positive_test"
+        android:textAppearance="?attr/textAppearanceBody1" />
+
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:text="@string/share_review_positive_test_covid"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="?attr/colorControlNormal"/>
+
+      <include layout="@layout/horizontal_divider" />
+
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:text="@string/submission_date"
+        android:textAppearance="?attr/textAppearanceBody1" />
+
+      <TextView
+        android:id="@+id/test_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="?attr/colorControlNormal" />
+
+    </LinearLayout>
+
+  </ScrollView>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_normal"
+    android:orientation="vertical"
+    android:background="?android:attr/colorBackground"
+    android:elevation="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/layout"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginBottom="@dimen/padding_large"
+      android:layout_marginHorizontal="@dimen/padding_normal"
+      android:background="@drawable/btn_bg">
+
+      <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/btn_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+      <TextView
+        android:id="@+id/positive_diagnosis_share_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center|left"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+      android:id="@+id/positive_diagnosis_delete_button"
+      style="@style/Widget.MaterialComponents.Button.TextButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="@dimen/padding_normal"
+      android:textColor="@color/delete"
+      android:text="@string/btn_delete_positive" />
+
+  </LinearLayout>
+
+</LinearLayout>-->

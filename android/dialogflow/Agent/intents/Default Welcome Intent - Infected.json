@@ -1,0 +1,46 @@
+{
+  "id": "0770d2f2-acbe-43fa-a42d-0cebb22649f9",
+  "name": "Default Welcome Intent - Infected",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Puedes realizar una de las siguientes opciones:\n\u003cbr\u003e\n1)Si eres estudiante universitario, por favor contacta immediatamente a tu Centro de Salud Estudiantil.\n\u003cbr\u003e\n2) Espera a que alguien del VDH te contacte. Esto puede tomar de 1 a 3 días dependiendo de cuando el resultado de tu prueba de laboratorio fue enviado a VDH. Todos los médicos y laboratorios están obligados a reportar las pruebas positivas de COVID-19. El personal de VDH también te guiará a través de los pasos requeridos para reportar un resultado positivo usando esta aplicación.\n\u003cbr\u003e\n3) Si tienes preguntas específicas, llama a VDH al 877-ASK-VDH3 [877-275-8343] \n\u003cbr\u003e\n4) Para mayor información sobre un resultado positivo visita el sitio web  https://www.vdh.virginia.gov/content/uploads/sites/182/2020/05/VDH-COVID-19-Viral-Test-Results-Infographic.v4.pdf"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Please do the following:\n\u003cbr\u003e\n1)If you are a college student, please contact your Student Health Center immediately.\n\u003cbr\u003e\n2) Wait for someone from VDH to contact you.  This should only take 1-3 days, based on when your lab result was submitted to VDH.  All doctors and laboratories are required to report positive COVID-19 tests.  VDH staff will also walk you through the steps to submit a positive report using this app.\n\u003cbr\u003e\n3) Call VDH at 877-ASK-VDH3 [877-275-8343] if you have specific questions.\n\u003cbr\u003e\n4) Learn more about a positive test result https://www.vdh.virginia.gov/content/uploads/sites/182/2020/05/VDH-COVID-19-Viral-Test-Results-Infographic.v4.pdf"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}

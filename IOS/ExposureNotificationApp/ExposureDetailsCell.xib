@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="6pV-po-Wfh" customClass="ExposureDetailsCell" customModule="Virginia_COVID_Alert" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="178"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6pV-po-Wfh" id="kXb-ef-KKh">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="178"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="HgN-dc-e60">
+                        <rect key="frame" x="20" y="11" width="374" height="151"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DETAILS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AO-lz-vBC">
+                                <rect key="frame" x="0.0" y="0.0" width="59" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Z3P-4A-uJX">
+                                <rect key="frame" x="0.0" y="34" width="313" height="117"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="firstBaseline" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ck5-Ow-9e7">
+                                        <rect key="frame" x="0.0" y="0.0" width="313" height="58.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="checkmark.seal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="i1J-O9-TT9">
+                                                <rect key="frame" x="0.0" y="37.5" width="22.5" height="21.5"/>
+                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                </preferredSymbolConfiguration>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ha3-jQ-Tex">
+                                                <rect key="frame" x="38.5" y="38" width="274.5" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This person’s diagnosis was verified" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofS-vw-Jp5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="274.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="firstBaseline" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vla-kE-jvL">
+                                        <rect key="frame" x="0.0" y="74.5" width="308.5" height="42.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jWy-xo-ZXl">
+                                                <rect key="frame" x="0.0" y="1" width="21" height="17.5"/>
+                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                </preferredSymbolConfiguration>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="N2q-CJ-LpF">
+                                                <rect key="frame" x="37" y="0.0" width="271.5" height="42.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You were near this person on {April 23, 2020}" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8On-Oa-FXU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="271.5" height="42.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ocf-Po-o3m"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HgN-dc-e60" firstAttribute="top" secondItem="kXb-ef-KKh" secondAttribute="topMargin" id="MvN-Kw-olp"/>
+                    <constraint firstAttribute="bottom" secondItem="HgN-dc-e60" secondAttribute="bottom" constant="16" id="UuH-fM-X88"/>
+                    <constraint firstItem="HgN-dc-e60" firstAttribute="leading" secondItem="kXb-ef-KKh" secondAttribute="leadingMargin" id="ahw-5y-n22"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="HgN-dc-e60" secondAttribute="trailing" id="uSN-LL-xTY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="8On-Oa-FXU" id="ADk-zw-N5b"/>
+                <outlet property="diagnosisVerificationLabel" destination="ofS-vw-Jp5" id="Pth-8U-edD"/>
+                <outlet property="headerLabel" destination="3AO-lz-vBC" id="xsG-ew-xyx"/>
+            </connections>
+            <point key="canvasLocation" x="398.55072463768118" y="205.58035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="checkmark.seal.fill" catalog="system" width="128" height="122"/>
+    </resources>
+</document>

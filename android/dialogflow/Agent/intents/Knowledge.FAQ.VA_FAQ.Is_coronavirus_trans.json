@@ -1,0 +1,35 @@
+{
+  "id": "84f8262a-d96a-4109-bbbc-268bc3b07caf",
+  "name": "Knowledge.FAQ.VA_FAQ.Is_coronavirus_trans",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "COVID-19 is a new disease and we are still learning about how it spreads. COVID-19 has not yet been found in semen or vaginal fluid but has been found in feces of people who are infected with the virus. Transmission through respiratory droplets is more likely when people are in close contact with one another (within about 6 feet)."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

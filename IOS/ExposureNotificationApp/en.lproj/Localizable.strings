@@ -1,0 +1,505 @@
+
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+All strings for the project, separated for localization.
+*/
+
+/* Appears in a dialog window when the user tries to submit a positive test report without any keys available yet on the device */
+"KEY_NOT_AVAILABLE_TITLE" = "Keys not yet available";
+"KEYS_NOT_AVAILABLE_TEXT" = "Your anonymous keys are not yet available. This happens if you have installed this app in the last 24 hours. Please resubmit tomorrow from the Notify Others screen.";
+
+/* Title of the enable bluetooth alert that pops up if the device has bluetooth disabled */
+"BLUETOOTH_DISABLED_ALERT_TITLE" = "Bluetooth must be turned on for Exposure Notifications to be enabled.";
+
+/* The dialog prompt content for the enable bluetooth alert */
+"BLUETOOTH_ENABLE_INSTRUCTIONS" = "Open Settings and toggle the switch to enable Bluetooth.";
+
+/* Virtual Agent URL */
+"VIRTUAL_AGENT_URL" = "TODO";
+
+/* Title */
+"WELCOME_TITLE" = "Welcome to COVIDWISE";
+
+/* Text */
+"WELCOME_TEXT" = "Thanks for downloading COVIDWISE, the Virginia Department of Health's (VDH) COVID-19 exposure notification app. Using this app is 100% voluntary. No GPS, location information, or personal identifiers will ever be collected or stored.
+
+Your device will share anonymous tokens via Bluetooth with other COVIDWISE users. If another user you've been nearby tests positive for COVID-19 within a 14-day period, your app will notify you.
+
+If you test positive, you can easily and anonymously notify others to help stop the spread of COVID-19.";
+
+/* Title */
+"ENABLE_EXPOSURE_TITLE" = "Enable Exposure Notifications";
+
+/* Text */
+"ENABLE_EXPOSURE_TEXT" = "Enabling exposure notification is your choice. It must be enabled for the app to receive exposure notifications or to notify others that you have tested positive for COVID-19. You can disable this feature at any time.
+
+Your privacy is protected. COVIDWISE only shares anonymous tokens with other app users. These tokens only collect data, such as the date, time, and signal strength and duration of proximity, and are not linked to your identity or location. Your personal information is never collected or shared with other COVIDWISE users.
+
+In the event another user you have been nearby tests positive for COVID-19, you can be notified that you are at risk of exposure.
+
+If you test positive for COVID-19, you control if you want to submit a positive test result to COVIDWISE, which will then notify other users if they were at risk. Doctors and laboratories are required to report positive COVID-19 test results to VDH. VDH staff will contact you if you test positive to provide guidance to help keep yourself and others safe.
+
+To learn more about COVID-19 in Virginia and associated symptoms, please visit: %@";
+
+/* Requirement text */
+"ENABLE_EXPOSURE_REQUIREMENT_TEXT" = "• Inform users that they can choose to enable Exposure Notifications, as well as that they can disable them at any time.
+
+• Explain that this only works with other devices that have Exposure Notifications turned on.
+
+• Explain the use of Random IDs, including what they are, how they’re shared and collected, and the privacy protections associated with them.
+
+• Explain how a user can be notified of an exposure event (including time), as well as the fact that exposure details (date, duration, and signal strength) will be shared with you.
+
+• Include an explanation of how a user may work with you to submit a positive diagnosis, with their consent.";
+
+/* Title */
+"RECOMMEND_EXPOSURE_TITLE" = "Exposure Notifications Are Strongly Recommended";
+
+/* Text */
+"RECOMMEND_EXPOSURE_TEXT" = "Enabling Exposure Notifications is required for this app to work and to help contain COVID-19 in your community. In order to be alerted that you were near someone who later tests positive for COVID-19, or to alert others you were near if you later test positive, Exposure Notifications must be enabled.";
+
+/* Onboarding title */
+"RECOMMEND_PUSH_TITLE" = "Push Notifications Are Strongly Recommended";
+
+/* Onboarding text */
+"RECOMMEND_PUSH_TEXT" = "Enabling Push Notifications is required to receive a push notification if you have been near someone who later tests positive for COVID-19.";
+
+/* Title */
+"NOTIFYING_OTHERS_TITLE" = "It's Important To Your Community To Share A Positive Result";
+
+/* Text */
+"NOTIFYING_OTHERS_TEXT" = "If you test positive for COVID-19, you can choose to share your result.
+
+This is how other COVIDWISE users in Virginia know they were exposed to someone who tested positive.
+
+Sharing this information helps stop the spread of the virus.";
+
+/* Header */
+"EXPOSURE_SCREEN_HEADER" = "Exposures";
+
+/* Header */
+"NOTIFY_OTHERS_SCREEN_HEADER" = "Notify Others";
+
+/* Header */
+"VIRTUAL_AGENT_SCREEN_HEADER" = "Virtual VDH";
+
+/* Header */
+"EXPOSURE_NOTIFICATION_OFF" = "Exposure Notifications are turned off";
+
+/* Header */
+"EXPOSURE_NOTIFICATION_DISABLED_DIRECTIONS" = "You will not be notified if you are exposed to COVID-19 until Exposure Notifications are turned on.";
+
+/* Header */
+"EXPOSURE_NOTIFICATION_DENIED_DIRECTIONS" = "Click here to turn on exposure notifications.";
+
+/* Header */
+"EXPOSURE_NOTIFICATION_BLUETOOTH_OFF_DIRECTIONS" = "You will not be notified if you are exposed to COVID-19 until Exposure Notifications are turned on. Go to Bluetooth in Settings to turn on Bluetooth, or simply tap the Bluetooth toggle in Control Center.";
+
+/* Button */
+"EXPOSURE_NOTIFICATION_DISABLED_ACTION" = "Turn On Exposure Notifications";
+
+/* Value */
+"EXPOSURE_NOTIFICATION_STATE_ON" = "On";
+
+/* Value */
+"EXPOSURE_NOTIFICATION_STATE_OFF" = "Off";
+
+/* Value */
+"EXPOSURE_NOTIFICATION_STATE_BLUETOOTH_OFF" = "Bluetooth Off";
+
+/* Value */
+"EXPOSURE_NOTIFICATION_STATE_RESTRICTED" = "Exposure Notifications Off";
+
+/* Value */
+"EXPOSURE_NOTIFICATION_STATE_UNKNOWN" = "Unknown";
+
+/* Footer */
+"EXPOSURE_YOU_WILL_BE_NOTIFIED" = "You will be notified if you are exposed to COVID-19.";
+
+/* Footer */
+"EXPOSURE_YOU_WILL_NOT_BE_NOTIFIED" = "You will not be notified if you are exposed to COVID-19.";
+
+/* Footer */
+"EXPOSURE_DETECTION_ERROR" = "An error occurred during exposure detection: %@";
+
+/* Footer */
+"EXPOSURE_LAST_CHECKED" = "Exposure last checked %@.";
+
+/* Header */
+"EXPOSURE_PAST_14_DAYS" = "Your exposures In the past 14 days";
+
+/* Title */
+"EXPOSURE_INFO_TITLE" = "Exposure Notifications";
+
+/* Title */
+"MORE_DETAILS" = "More Details";
+
+/* Text */
+"EXPOSURE_INFO_TEXT" = "You can manage Exposure Notifications in %@.
+
+Enabling exposure notifications is your choice. It can be disabled by you at any time. It must be enabled for the app to receive exposure notifications or to notify others that you have tested positive for COVID-19. It can be disabled by you at any time.
+
+Your privacy is protected. COVIDWISE only shares anonymous tokens with other app users. These tokens are not linked to your identity or location. Your personal information is not collected or shared with other COVIDWISE users. Information from the anonymous tokens, such as the date, time, and signal strength and duration of proximity are collected. These details are not shared with other app users and are not tied to your personal identity.
+
+In the event another user you have been nearby tests positive for COVID-19, you can be notified that you are at risk of exposure. You control if you want to submit a positive test result to COVIDWISE, which will then notify other users if they were at risk.
+
+Doctors and laboratories are required to report positive COVID-19 test results to VDH. VDH staff will contact you if you test positive to provide guidance to help keep yourself and others safe.
+
+To learn more about COVID-19 in Virginia and associated symptoms, please visit %@";
+
+/* Requirement text */
+"EXPOSURE_INFO_REQUIREMENT_TEXT" = "• Inform users that they can choose to enable Exposure Notifications, as well as that they can disable them at any time.
+
+• Explain that this only works with other devices that have Exposure Notifications turned on.
+
+• Explain the use of Random IDs, including what they are, how they’re shared and collected, and the privacy protections associated with them.
+
+• Explain how a user can be notified of an exposure event (including time), as well as the fact that exposure details (date, duration, and signal strength) will be shared with you.
+
+• Include an explanation of how a user may work with you to submit a positive diagnosis, with their consent.";
+
+/* Title */
+"EXPOSURE_ABOUT_TITLE" = "About Exposure Notifications";
+
+/* Text */
+"EXPOSURE_ABOUT_TEXT" = "You can manage Exposure Notifications in %@.
+
+Enabling exposure notifications is your choice. It can be disabled by you at any time. It must be enabled for the app to receive exposure notifications or to notify others that you have tested positive for COVID-19. It can be disabled by you at any time.
+
+Your privacy is protected. COVIDWISE only shares anonymous tokens with other app users. These tokens are not linked to your identity or location. Your personal information is not collected or shared with other COVIDWISE users. Information from the anonymous tokens, such as the date, time, and signal strength and duration of proximity are collected. These details are not shared with other app users and are not tied to your personal identity.
+
+In the event another user you have been nearby tests positive for COVID-19, you can be notified that you are at risk of exposure. You control if you want to submit a positive test result to COVIDWISE, which will then notify other users if they were at risk.
+
+Doctors and laboratories are required to report positive COVID-19 test results to VDH. VDH staff will contact you if you test positive to provide guidance to help keep yourself and others safe.
+
+To learn more about COVID-19 in Virginia and associated symptoms, please visit %@";
+
+/* Title */
+"EXPOSURE_DETAILS_TITLE" = "Past Exposures";
+
+/* Text */
+"EXPOSURE_DETAILS_TEXT" = "You have likely been exposed to someone who tested positive for COVID-19.
+
+COVIDWISE estimates that you were last exposed %@.
+
+To learn more about recommended precautions, you can:\n
+%$  Visit %@\n
+%$  Visit %@\n
+%$  Call VDH at %@";
+
+/* Text */
+"VIRTUAL_VDH" = "Virtual VDH";
+
+/* Phone */
+"PHONE_NUMBER" = "877-275-8343";
+
+/* Phone Ask*/
+"ASK_PHONE_NUMBER" = "877-ASK-VDH3";
+
+/* Title */
+"NO_EXPOSURE_TITLE" = "No Exposures Detected";
+
+/* Title */
+"EXPOSURE_TITLE" = "Exposures Detected";
+
+/* Text */
+"NO_EXPOSURE_TEXT" = "If this app detects an exposure that meets VDH's criteria, you will receive a push notification and additional information will be displayed here.";
+
+/* Header */
+"EXPOSURE_DETAILS_HEADER" = "Details";
+
+/* Text */
+"EXPOSURE_DETAILS_DIAGNOSIS_VERIFICATION" = "This person’s diagnosis was verified";
+
+/* Header */
+"EXPOSURE_NEXT_STEPS_HEADER" = "Next Steps";
+
+/* Text */
+"EXPOSURE_NEXT_STEPS_TEXT" = "To learn more, please visit the Virtual VDH within Virginia COVID Alert, learn more online at TODO, or contact the VDH Call Center at TODO (TODO).";
+
+/* Footnote */
+"EXPOSURE_FOOTNOTE" = "This report has been saved to this app and you can access it at any time in the future.";
+
+
+/* Text */
+"EXPOSURE_DETAILS_DATE_TEXT" = "You were near this person on %@";
+
+
+/* Title */
+"EXPOSURE_DETAILS_LEARN_TITLE" = "About Verified Test Results";
+
+/* Text */
+"EXPOSURE_DETAILS_LEARN_TEXT" = "A possible exposure with a verified test means that someone you were near within the last 10 days has received a positive result on a COVID-19 test.";
+
+
+/* Header */
+"NOTIFY_OTHERS_DESCRIPTION" = "If you test positive for COVID-19, you can choose to share your result.
+
+Other COVIDWISE users you were near over the past 14 days may be notified of exposure. Your name will not be shared with any app users. Future exposures will not be notified based on this submission.
+
+Please self-isolate if you have tested positive.";
+
+/* Header */
+"NOTIFY_OTHERS_DISABLED_DIRECTIONS" = "You can’t share your positive diagnosis until Exposure Notifications are turned on.";
+
+/* Header */
+"NOTIFY_OTHERS_DENIED_DIRECTIONS" = "When exposure notifications are turned off, you won't be notified if you are exposed to COVID-19.";
+
+/* Header */
+"NOTIFY_OTHERS_HEADER" = "Share A Positive Result";
+
+/* Title */
+"NO_KEYS_TITLE" = "Keys not yet available";
+
+/* Text */
+"NO_KEYS_TEXT" = "Your anonymous keys are not yet available. This happens if you have installed this app in the last 24 hours. Please resubmit tomorrow from the Notify Others screen";
+
+/* Button */
+"NOTIFY_OTHERS_ACTION" = "Share A Positive Result";
+
+/* Header */
+"POSITIVE_DIAGNOSIS" = "Positive Diagnosis";
+
+/* Header */
+"VERIFICATION_START_HEADER" = "Before You Get Started";
+
+/* Title */
+"VERIFICATION_START_TITLE" = "The 100% Transparency Checklist";
+
+/* Text */
+"VERIFICATION_START_TEXT1" = "VDH is serious about maintaining your privacy and trust.";
+
+/* Text */
+"VERIFICATION_START_TEXT2" = "You must enable exposure notifications for this app to work.";
+
+/* Text */
+"VERIFICATION_START_TEXT3" = "You can disable exposure notifications at any time.";
+
+/* Text */
+"VERIFICATION_START_TEXT4" = "Sharing a positive COVID-19 result with the COVIDWISE community is your choice and is only done with your consent.";
+
+/* Text */
+"VERIFICATION_START_TEXT5" = "Your location and personal information (name, age, gender, race, etc.) is NEVER collected by COVIDWISE or shared with other users.";
+
+/* Text */
+"VERIFICATION_START_TEXT6" = "Your location is never collected in COVIDWISE.";
+
+/* Text */
+"VERIFICATION_START_TEXT7" = "Exposures are determined between app users using anonymous tokens that are never tied to your identity.";
+
+/* Text */
+"VERIFICATION_START_TEXT8" = "An exposure in the app includes a risk calculation. This means that your device has found a match between other users' tokens you have been nearby, including the amount of time spent in proximity with these tokens and the strength of Bluetooth signal as an estimate of distance.  Risk values are not tied to your personal identity and are not shared with other app users. ";
+
+/* Text */
+"VERIFICATION_START_TEXT9" = "Your participation helps to contain COVID-19 within your community.";
+
+/* Requirement text */
+"VERIFICATION_START_REQUIREMENT_TEXT" = "These points must be covered in this screen before asking the user for access:
+
+• Explain this is optional and can only be done with user’s consent.
+
+• Explain the value of notifying others of a positive diagnosis.
+
+• Explain how the Random IDs will be used to notify others of an exposure.
+
+• What will be shared and what will not be shared (random IDs). If you are calculating any sort of exposure risk value, explain clearly how your risk value is calculated.";
+
+
+/* Title */
+"VERIFICATION_IDENTIFIER_TITLE" = "Confirm Your Positive Result";
+
+/* Header */
+"VERIFICATION_IDENTIFIER_HEADER" = "How It Works";
+
+/* Text */
+"VERIFICATION_IDENTIFIER_TEXT" = "VDH contacts everyone who has received a positive test result for COVID-19 and their staff will provide a unique personal identification number (PIN) to that individual. This is used to prevent false reporting of positive tests within the app.";
+
+/* Text */
+"VERIFICATION_IDENTIFIER_TEXT1" = "The app does not link the PIN to your name.";
+
+/* Text */
+ "VERIFICATION_IDENTIFIER_TEXT2" =  "\n\n\n\n\n\n\n";
+
+/* Label */
+"VERIFICATION_IDENTIFIER_ENTRY_LABEL" = "Please enter your six-digit PIN:";
+
+/* Label */
+"VERIFICATION_IDENTIFIER_DEVELOPER" = "Enter the PIN provided to you by the Virginia Department of Health (VDH). If you have not received one yet, you should wait for a call from VDH.";
+
+/* Alert title */
+"VERIFICATION_IDENTIFIER_INVALID" = "Unable to Confirm Positive Diagnosis
+
+We are unable to confirm your positive test. This may happen if the PIN was entered incorrectly. Please re-enter your six-digit digit PIN.";
+
+/* Text */
+"VERIFICATION_IDENTIFIER_RETRY_MESSAGE" = "Please wait %@ before attempting another PIN.";
+
+/* Text */
+"MINUTES" = "minutes";
+
+/* Text */
+"MINUTE" = "minute";
+
+/* Title */
+"VERIFICATION_IDENTIFIER_ABOUT_TITLE" = "About Test Identifiers";
+
+/* Text */
+"VERIFICATION_IDENTIFIER_ABOUT_TEXT" = "VDH staff will provide you a unique personal identification number (PIN). The PIN is created automatically when VDH receives your test result from a laboratory. It is used to prevent false reporting of positive results. This PIN is generated automatically when the required laboratory report of your positive COVID-19 diagnosis is received by VDH.
+
+If you are contacting VDH to report your positive result, VDH staff will request the first 3 letters of your first and last names, along with your data of birth to ensure a match with a laboratory report. Once confirmed, VDH staff will provide you the PIN. The app does not link the PIN with your name.";
+
+/* Title */
+"VERIFICATION_ADMINISTRATION_DATE_TITLE" = "When did you take the test?";
+
+/* Text */
+"VERIFICATION_ADMINISTRATION_DATE_TEXT" = "The test date helps the app know when you may have been contagious and to notify other COVIDWISE users of possible exposures.";
+
+/* Label */
+"VERIFICATION_ADMINISTRATION_DATE_LABEL" = "Date";
+
+/* Value */
+"VERIFICATION_ADMINISTRATION_DATE_NOT_SET" = "Tap to enter date";
+
+/* Title */
+"VERIFICATION_REVIEW_TITLE" = "Share Positive Result";
+
+/* Text */
+"VERIFICATION_REVIEW_TEXT" = "Share Securely";
+
+/* Title */
+"VERIFICATION_SHARED_TITLE" = "You're all done!";
+
+/* HEADER */
+"VERIFICATION_SHARED_HEADER" = "Thank You For Confidentially Sharing Your Result.";
+
+/* Text */
+"VERIFICATION_SHARED_TEXT" = "Your last 14 days of anonymous tokens have been submitted. COVIDWISE users that you have been near may be notified within the next day.
+
+Your name is not tied to your report and you will not hear from other COVIDWISE users. However, your information may help identify new cases of COVID-19, as other app users receive exposure notifications and are tested.
+
+Thank you for doing your part to keep Virginians healthy and safe!";
+
+/* Title */
+"VERIFICATION_NOT_SHARED_TITLE" = "Your Positive Diagnosis Has Been Saved to Your Phone. You Can Share This Diagnosis at Any Time.";
+
+/* Text */
+"VERIFICATION_NOT_SHARED_TEXT" = "Please review your submission";
+
+/* Header */
+"COVID_19" = "COVID-19";
+
+/* Header */
+"TEST_RESULT_DETAILS" = "Details";
+
+/* Value */
+"TEST_RESULT_STATE_SHARED" = "Shared";
+
+/* Value */
+"TEST_RESULT_STATE_NOT_SHARED" = "Not Shared";
+
+/* Label */
+"TEST_RESULT_DIAGNOSIS" = "Diagnosis";
+
+/* Value */
+"TEST_RESULT_DIAGNOSIS_POSITIVE" = "COVID-19 Positive Diagnosis";
+
+/* Label */
+"TEST_RESULT_ADMINISTRATION_DATE" = "Submitted Result On";
+
+/* Label */
+"TEST_RESULT_ADMINISTRATION_DATE_LABEL" = "Test Date";
+
+/* Button */
+"TEST_RESULT_SHARE" = "Submit positive result";
+
+/* Disabled button */
+"TEST_RESULT_SHARED" = "Positive Diagnosis Shared";
+
+/* Button */
+"TEST_RESULT_DELETE" = "Delete Positive Diagnosis";
+
+/* Alert title */
+"TEST_RESULT_DELETE_ALERT" = "Are you sure you want to delete your positive diagnosis? This will permanently remove this diagnosis from your device";
+
+
+/* Title */
+"ERROR" = "Error";
+
+/* Button */
+"OK" = "OK";
+
+/* Button */
+"GET_STARTED" = "Get Started";
+
+/* Button */
+"CONTINUE" = "Continue";
+
+/* Button */
+"NEXT" = "NEXT";
+
+/* Button */
+"ENABLE" = "Enable";
+
+/* Button */
+"DONT_ENABLE" = "Don’t Enable";
+
+/* Button */
+"GO_TO_SETTINGS" = "Go to Settings";
+
+/* Button */
+"PRIVACY_POLICY_LINK_LABEL" = "For more information, read our %@.";
+
+/* Text */
+"PRIVACY_POLICY_LINK_TEXT" = "Privacy Policy";
+
+
+/* Button */
+"NOT_NOW" = "Not Now";
+
+/* Button */
+"CANCEL" = "Cancel";
+
+/* Button */
+"DONE" = "Done";
+
+/* Title */
+"LEARN_MORE_TITLE" = "Learn more";
+
+/* Text */
+"LEARN_MORE_LABEL" = "Learn more at %@";
+
+/* Link */
+"LEARN_MORE_LINK" = "TODO";
+
+/* Link */
+"SETTINGS" = "Settings > COVIDWISE";
+
+/* Error */
+"BACKGROUND_TIMEOUT" = "Ran out of background time.";
+
+/* Title */
+"USER_NOTIFICATION_TITLE" = "Possible COVID-19 Exposure";
+
+/* Text */
+"USER_NOTIFICATION_TEXT" = "You have likely been exposed to someone who has tested positive for COVID-19. Tap to learn more.";
+
+/* User notification */
+// Possible COVID-19 Exposure
+"USER_NOTIFICATION_EXPLANATION" = "USER_NOTIFICATION_EXPLANATION: {Actual copy to be provided by Public Health Authority}";
+
+/* User notification title */
+"USER_NOTIFICATION_BLUETOOTH_OFF_TITLE" = "Bluetooth Off";
+
+/* User notification */
+"USER_NOTIFICATION_BLUETOOTH_OFF_BODY" = "Turn on Bluetooth to continue using COVID-19 Exposure Logging and Notifications.";
+
+/* Text */
+"TODAY" = "today";
+
+/* Text */
+"N_DAYS_AGO" = "%@ days ago";
+
+/* Text */
+"1_DAY_AGO" = "%@ day ago";

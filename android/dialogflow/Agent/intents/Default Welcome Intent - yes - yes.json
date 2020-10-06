@@ -1,0 +1,46 @@
+{
+  "id": "cf320b1b-8aea-4b5d-af18-522cd7b5d63a",
+  "parentId": "ee9cbe74-1e80-4cb4-bc92-e23f811d6319",
+  "rootParentId": "57271ab9-1a4a-47d0-913c-0b972b532a10",
+  "name": "Default Welcome Intent - yes - yes",
+  "auto": true,
+  "contexts": [
+    "DefaultWelcomeIntent-yes-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-yes.DefaultWelcomeIntent-yes-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "How many days has it been since you’ve had these symptoms?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": -1,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

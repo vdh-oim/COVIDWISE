@@ -1,0 +1,3 @@
+runtime: python37
+service: contact-tracing-phse-2
+entrypoint: gunicorn -t 120 -b :$PORT main:app

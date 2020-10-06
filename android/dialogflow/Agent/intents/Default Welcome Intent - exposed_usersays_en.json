@@ -1,0 +1,41 @@
+[
+  {
+    "id": "f76b62dc-6146-4407-a287-da41eeeabe2e",
+    "data": [
+      {
+        "text": "Exposed",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e932ee9c-50ce-44a5-b4e6-cdc74d2145a2",
+    "data": [
+      {
+        "text": "Exposure notification",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "93771e8c-c8f9-4ac0-953d-fdc4f291973b",
+    "data": [
+      {
+        "text": "I received an exposure notification",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

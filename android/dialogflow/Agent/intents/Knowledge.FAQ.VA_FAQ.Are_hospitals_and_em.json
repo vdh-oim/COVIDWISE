@@ -1,0 +1,35 @@
+{
+  "id": "7f66559b-6f0d-487a-8a68-5eb9e74ca380",
+  "name": "Knowledge.FAQ.VA_FAQ.Are_hospitals_and_em",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Yes, healthcare facilities, including hospitals and emergency rooms, are still safe to visit. You should get immediate medical attention if you have any medical emergency. Hospitals and healthcare facilities continue to sanitize regularly and are prepared to treat patients for all medical conditions and emergencies."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "12ac61eb-cd95-47b9-bca0-cc9a1b9497cd",
+  "name": "Knowledge.FAQ.VA_FAQ.What_is_contact_trac",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Contact tracing is a method often used by the health department to prevent the spread of disease. For COVID-19 it means ensuring everyone who has been in contact with a person diagnosed with COVID-19 is aware that they might have been exposed, checking on their health status, and providing them with information about how to prevent the spread of disease, including the importance of quarantine (which means staying at home and maintaining social distance from others) and what to do if symptoms develop."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

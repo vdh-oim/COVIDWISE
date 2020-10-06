@@ -1,0 +1,35 @@
+{
+  "id": "1f2b56d0-0b20-46c3-8c07-53352242844c",
+  "name": "Knowledge.FAQ.VA_FAQ.How_can_people_stop_",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "People can fight stigma and help, not hurt, others by providing social support. Counter stigma by learning and sharing facts. Communicate the facts that viruses do not target specific racial or ethnic groups. Share the facts on how COVID-19 actually spreads to help stop stigma."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

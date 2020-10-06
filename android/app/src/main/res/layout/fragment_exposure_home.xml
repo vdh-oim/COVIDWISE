@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020 Google LLC
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/toolbar_color">
+
+    <TextView
+      android:textStyle="normal"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:layout_marginLeft="@dimen/dp24"
+      android:fontFamily="sans-serif-medium"
+      android:gravity="center|left"
+      android:text="@string/home_tab_exposures_text"
+      android:textColor="@color/white"
+      android:textSize="20sp" />
+
+  </LinearLayout>
+
+  <androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fillViewport="true"
+      android:orientation="vertical">
+
+      <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        app:cardCornerRadius="5dp">
+
+        <ViewSwitcher
+          android:id="@+id/settings_banner_switcher"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:measureAllChildren="false">
+
+
+          <LinearLayout
+            android:id="@+id/exposure_about_button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/padding_large"
+            android:paddingEnd="@dimen/padding_large"
+            android:orientation="vertical">
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textStyle="bold"
+              android:textSize="20sp"
+              android:textAppearance="?attr/textAppearanceHeadline6"
+              android:lineSpacingExtra="4sp"
+              android:layout_marginBottom="@dimen/dp6"
+              android:layout_marginTop="@dimen/dp14"
+              android:text="@string/exposure_notifications_are_turned_off" />
+
+
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/horizontal_divider_color" />
+
+
+
+            <Button
+              android:id="@+id/start_api_button"
+              style="?attr/materialButtonOutlinedStyle"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="@dimen/dp12"
+              android:layout_marginBottom="@dimen/dp13"
+              android:text="@string/turn_on_exposure_notifications_action" />
+
+          </LinearLayout>
+
+          <LinearLayout
+            android:id="@+id/exposure_about_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/padding_large"
+            android:paddingEnd="@dimen/padding_large"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textStyle="bold"
+              android:textSize="20sp"
+              android:textAppearance="?attr/textAppearanceHeadline6"
+              android:lineSpacingExtra="4sp"
+              android:text="@string/exposure_notifications"
+              android:layout_marginBottom="@dimen/dp6"
+              android:layout_marginTop="@dimen/dp14"  />
+
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/horizontal_divider_color" />
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="@dimen/dp12"
+              android:layout_marginBottom="@dimen/dp13">
+
+              <TextView
+                android:id="@+id/exposure_notifications_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:visibility="gone"
+                android:textColor="#00bb12"
+                android:lineSpacingExtra="7sp"
+                tools:text="Off – Dynamic Value" />
+
+            </LinearLayout>
+
+          </LinearLayout>
+
+        </ViewSwitcher>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginBottom="@dimen/dp6"
+            android:paddingStart="@dimen/padding_extra_large"
+            android:paddingEnd="@dimen/padding_large"
+            android:text="@string/past_exposures"
+            />
+
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/horizontal_divider_color"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginRight="@dimen/dp14" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/padding_micro"
+          android:orientation="horizontal">
+
+          <ImageView
+            android:id="@+id/detected_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            android:layout_weight="0"
+            android:src="@drawable/ic_virus_red" />
+
+          <ViewSwitcher
+            android:id="@+id/exposures_list_empty_switcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:measureAllChildren="false">
+
+
+              <TextView
+                android:id="@+id/info_virus_status"
+                android:textStyle="normal"
+                android:paddingStart="@dimen/padding_extra_large"
+                android:paddingEnd="@dimen/padding_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="7sp"
+                android:text="@string/no_exposures"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+              <TextView
+                android:id="@+id/info_exposure_detected"
+                android:textStyle="normal"
+                android:paddingStart="@dimen/padding_micro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="7sp"
+                android:text="@string/possible_exposure"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+          </ViewSwitcher>
+        </LinearLayout>
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp13"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:paddingHorizontal="@dimen/padding_large">
+
+
+            <TextView
+              android:id="@+id/info_status"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:autoLink="all"
+              android:paddingHorizontal="@dimen/padding_small"
+              android:text="@string/notifications_enabled_info"
+              android:textAppearance="?attr/textAppearanceBody2"
+              android:textColor="@color/covid_color"
+              android:textSize="16sp" />
+
+          </LinearLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dp5"
+          android:layout_marginBottom="@dimen/dp13"
+          android:orientation="horizontal"
+          android:id="@+id/layout1"
+          android:visibility="gone"
+          android:paddingHorizontal="@dimen/padding_large">
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:paddingStart="@dimen/dp10"
+            android:paddingTop="@dimen/dp5"
+            android:src="@drawable/ic_virtual" />
+          <TextView
+          android:autoLink="all"
+          android:id="@+id/info_point1"
+            android:textSize="16sp"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:paddingHorizontal="@dimen/padding_small"
+          android:visibility="visible"
+          android:textAppearance="?attr/textAppearanceBody2"
+          android:textColor="#000000" />
+        </LinearLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/layout2"
+          android:layout_marginTop="@dimen/dp5"
+          android:layout_marginBottom="@dimen/dp13"
+          android:orientation="horizontal"
+          android:visibility="gone"
+          android:paddingHorizontal="@dimen/padding_large">
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:paddingTop="@dimen/dp5"
+            android:paddingStart="@dimen/dp10"
+            android:src="@drawable/ic_web_browser" />
+          <TextView
+            android:autoLink="all"
+            android:textSize="16sp"
+            android:id="@+id/info_point2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="@dimen/padding_small"
+            android:textColorLink="@color/link_color"
+            android:visibility="visible"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="#000000" />
+        </LinearLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dp5"
+          android:layout_marginBottom="@dimen/dp13"
+          android:orientation="horizontal"
+          android:id="@+id/layout3"
+          android:visibility="gone"
+          android:paddingHorizontal="@dimen/padding_large">
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:paddingTop="@dimen/dp5"
+            android:paddingStart="8dp"
+            android:paddingEnd="2dp"
+            android:src="@drawable/ic_smartphone" />
+          <TextView
+            android:autoLink="phone"
+            android:id="@+id/info_point3"
+            android:textColorLink="@color/link_color"
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="@dimen/padding_small"
+            android:visibility="visible"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="#000000" />
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <TextView
+        android:id="@+id/exposure_privacy_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:clickable="true"
+        android:letterSpacing="0.03125"
+        android:linksClickable="true"
+        android:text="@string/onboarding_privacy_policy_link"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
+        android:textColor="@color/covid_color"
+        android:textColorLink="#0059E8" />
+
+    </LinearLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+
+  <!--
+  <?xml version="1.0" encoding="utf-8"?>
+  &lt;!&ndash;
+    ~ Copyright 2020 Google LLC
+    ~
+    ~ Licensed under the Apache License, Version 2.0 (the "License");
+    ~ you may not use this file except in compliance with the License.
+    ~ You may obtain a copy of the License at
+    ~
+    ~      https://www.apache.org/licenses/LICENSE-2.0
+    ~
+    ~ Unless required by applicable law or agreed to in writing, software
+    ~ distributed under the License is distributed on an "AS IS" BASIS,
+    ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    ~ See the License for the specific language governing permissions and
+    ~ limitations under the License.
+    ~
+    &ndash;&gt;
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:gravity="center"
+      android:text="@string/main_toolbar_text"
+      android:textAppearance="?attr/textAppearanceHeadline6" />
+
+    <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <ViewSwitcher
+          android:id="@+id/settings_banner_switcher"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:measureAllChildren="false">
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/padding_normal"
+            android:paddingStart="@dimen/padding_large"
+            android:paddingEnd="@dimen/padding_large"
+            android:orientation="vertical">
+            <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAppearance="?attr/textAppearanceHeadline6"
+              android:layout_marginBottom="@dimen/padding_normal"
+              android:text="@string/exposure_notifications_are_turned_off" />
+
+            <Button
+              android:id="@+id/start_api_button"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/turn_on_exposure_notifications_action"
+              android:layout_gravity="center_horizontal"
+              style="?attr/materialButtonOutlinedStyle" />
+
+          </LinearLayout>
+
+          <LinearLayout
+            android:id="@+id/exposure_about_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/exposure_notifications"
+              android:textAppearance="?attr/textAppearanceBody1" />
+
+            <TextView
+              android:id="@+id/exposure_notifications_status"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/padding_micro"
+              android:textAppearance="?attr/textAppearanceBody2"
+              tools:text="Off – Dynamic Value"
+              android:textColor="?attr/colorControlNormal" />
+
+          </LinearLayout>
+
+        </ViewSwitcher>
+
+        <include layout="@layout/horizontal_divider"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/padding_large"
+          android:paddingStart="@dimen/padding_large"
+          android:paddingEnd="@dimen/padding_large"
+          android:text="@string/past_exposures"
+          android:textAppearance="?attr/textAppearanceOverline" />
+
+        <ViewSwitcher
+          android:id="@+id/exposures_list_empty_switcher"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:measureAllChildren="false"
+          android:paddingStart="@dimen/padding_large"
+          android:paddingEnd="@dimen/padding_large"
+          android:layout_marginVertical="@dimen/padding_normal">
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_exposures"
+            android:textAppearance="?attr/textAppearanceBody1" />
+
+          <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/exposures_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_exposure_entity"
+            android:nestedScrollingEnabled="false" />
+
+        </ViewSwitcher>
+
+        <include layout="@layout/horizontal_divider"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginVertical="@dimen/padding_large"
+          android:paddingHorizontal="@dimen/padding_large"
+          android:orientation="horizontal">
+
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_info_black_24dp"/>
+
+          <TextView
+            android:id="@+id/info_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="@dimen/padding_small"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?attr/colorControlNormal"
+            android:text="@string/notifications_enabled_info" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginHorizontal="@dimen/padding_large"
+          android:layout_marginVertical="@dimen/padding_normal"
+          android:background="@drawable/btn_bg">
+
+          <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/btn_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+          <TextView
+            android:id="@+id/debug_test_download_key_file_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/debug_share_test_download_keys_text"
+            android:textColor="@color/text_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+      </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+  </LinearLayout>
+  -->
+
+  <!--
+  <?xml version="1.0" encoding="utf-8"?>
+  &lt;!&ndash;
+    ~ Copyright 2020 Google LLC
+    ~
+    ~ Licensed under the Apache License, Version 2.0 (the "License");
+    ~ you may not use this file except in compliance with the License.
+    ~ You may obtain a copy of the License at
+    ~
+    ~      https://www.apache.org/licenses/LICENSE-2.0
+    ~
+    ~ Unless required by applicable law or agreed to in writing, software
+    ~ distributed under the License is distributed on an "AS IS" BASIS,
+    ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    ~ See the License for the specific language governing permissions and
+    ~ limitations under the License.
+    ~
+    &ndash;&gt;
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:gravity="center"
+      android:text="@string/main_toolbar_text"
+      android:textAppearance="?attr/textAppearanceHeadline6" />
+
+    <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <ViewSwitcher
+          android:id="@+id/settings_banner_switcher"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:measureAllChildren="false">
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/padding_normal"
+            android:paddingStart="@dimen/padding_large"
+            android:paddingEnd="@dimen/padding_large"
+            android:orientation="vertical">
+            <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAppearance="?attr/textAppearanceHeadline6"
+              android:layout_marginBottom="@dimen/padding_normal"
+              android:text="@string/exposure_notifications_are_turned_off" />
+
+            <Button
+              android:id="@+id/start_api_button"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/turn_on_exposure_notifications_action"
+              android:layout_gravity="center_horizontal"
+              style="?attr/materialButtonOutlinedStyle" />
+
+          </LinearLayout>
+
+          <LinearLayout
+            android:id="@+id/exposure_about_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/exposure_notifications"
+              android:textAppearance="?attr/textAppearanceBody1" />
+
+            <TextView
+              android:id="@+id/exposure_notifications_status"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/padding_micro"
+              android:textAppearance="?attr/textAppearanceBody2"
+              tools:text="Off – Dynamic Value"
+              android:textColor="?attr/colorControlNormal" />
+
+          </LinearLayout>
+
+        </ViewSwitcher>
+
+        <include layout="@layout/horizontal_divider"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/padding_large"
+          android:paddingStart="@dimen/padding_large"
+          android:paddingEnd="@dimen/padding_large"
+          android:text="@string/past_exposures"
+          android:textAppearance="?attr/textAppearanceOverline" />
+
+        <ViewSwitcher
+          android:id="@+id/exposures_list_empty_switcher"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:measureAllChildren="false"
+          android:paddingStart="@dimen/padding_large"
+          android:paddingEnd="@dimen/padding_large"
+          android:layout_marginVertical="@dimen/padding_normal">
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_exposures"
+            android:textAppearance="?attr/textAppearanceBody1" />
+
+          <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/exposures_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_exposure_entity"
+            android:nestedScrollingEnabled="false" />
+
+        </ViewSwitcher>
+
+        <include layout="@layout/horizontal_divider"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginVertical="@dimen/padding_large"
+          android:paddingHorizontal="@dimen/padding_large"
+          android:orientation="horizontal">
+
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_info_black_24dp"/>
+
+          <TextView
+            android:id="@+id/info_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="@dimen/padding_small"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?attr/colorControlNormal"
+            android:text="@string/notifications_enabled_info" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginHorizontal="@dimen/padding_large"
+          android:layout_marginVertical="@dimen/padding_normal"
+          android:background="@drawable/btn_bg">
+
+          <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/btn_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+          <TextView
+            android:id="@+id/debug_test_download_key_file_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/debug_share_test_download_keys_text"
+            android:textColor="@color/text_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+      </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+  </LinearLayout>
+  -->

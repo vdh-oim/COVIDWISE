@@ -1,0 +1,91 @@
+# cloudbuild.yaml
+substitutions:
+  _TYPE:
+  _TYPECOMMAND: 
+  _PASSWORD:
+  _CACHE_BUCKET:
+  _ARTIFACT_BUCKET:
+  _CONFIG_BUCKET:
+steps:
+
+# Set a persistent volume according to /cloud-build/docs/build-config (search for volumes)
+- name: 'gcr.io/cloud-builders/gsutil'
+  id: copy_build_cache
+  # we use rsync and not cp so that this step doesn't fail the first time it's run
+  args: ['rsync', 'gs://${_CACHE_BUCKET}/', '/build_cache']
+  volumes:
+  - name: 'build_cache'
+    path: '/build_cache'
+
+
+
+# Set the apk build number for current build by reading it from a file from gcs
+- name: 'gcr.io/$PROJECT_ID/buildnum'
+  id: set_build_num
+  args: ['gs://${_CONFIG_BUCKET}/buildnum']
+  volumes:
+  - name: 'env'
+    path: '/env'
+
+#Untar the cache file downloaded from gcs
+
+- name: 'gcr.io/$PROJECT_ID/tar'
+  id: extract_build_cache
+  waitFor: ['copy_build_cache']
+  # This might fail the first time, but that's okay
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+    tar xpzf /build_cache/cache.tgz -C / || echo "No cache found."
+  volumes:
+  - name: 'build_cache'
+    path: '/build_cache'
+
+# Build APK from gradle with configurale variables
+
+- name: 'gcr.io/$PROJECT_ID/android:28'
+  id: build
+  args: ['/bin/sh', '-c', 'chmod +x gradlew && ./gradlew -PRELEASE_KEY_PASSWORD=${_PASSWORD} -PRELEASE_STORE_PASSWORD=${_PASSWORD} -PBUILD_NUMBER=$$BUILD_NUM ${_TYPECOMMAND}']
+  env:
+  - 'TERM=dumb'
+  - 'JAVA_TOOL_OPTIONS="-Xmx3g"'
+  - 'GRADLE_USER_HOME=/build_cache/.gradle'
+  - 'GRADLE_OPTS="-Dorg.gradle.daemon=false -Dorg.gradle.parallel=true -Dkotlin.incremental=false"'
+  - 'BRANCH_NAME=$BRANCH_NAME'
+
+  waitFor: ['extract_build_cache', 'set_build_num']
+  volumes:
+  - name: 'build_cache'
+    path: '/build_cache'
+  - name: 'env'
+    path: '/env'
+
+
+  
+
+# push the built apk to the GCS bucket
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk:slim'
+  args: ['/bin/sh', '-c', 'export current_date=$(date -u +%Y-%m-%d) && gsutil -q cp -r app/build/outputs/apk gs://${_ARTIFACT_BUCKET}/$$current_date/$BRANCH_NAME-$SHORT_SHA/']
+  waitFor: ['build']
+
+
+# Compress the gradle build cache
+- name: 'gcr.io/$PROJECT_ID/tar'
+  id: compress_cache
+  args: ['cpvzf', '/build_cache/cache.tgz', '/build_cache/.gradle/caches', '/build_cache/.gradle/wrapper']
+  waitFor: ['build']
+  volumes:
+  - name: 'build_cache'
+    path: '/build_cache'
+
+
+# Store the build cache
+- name: gcr.io/cloud-builders/gsutil
+  args: ['cp', '/build_cache/cache.tgz', 'gs://${_CACHE_BUCKET}/cache.tgz']
+  waitFor: ['compress_cache']
+  volumes:
+  - name: 'build_cache'
+    path: '/build_cache'
+
+timeout: 1100s
