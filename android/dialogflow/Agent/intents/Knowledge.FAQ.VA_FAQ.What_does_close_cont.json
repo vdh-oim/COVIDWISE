@@ -1,0 +1,35 @@
+{
+  "id": "29ea3f27-9db1-4858-a2c2-f3f6ff279029",
+  "name": "Knowledge.FAQ.VA_FAQ.What_does_close_cont",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "When assessing a person’s risk of exposure to COVID-19, close contact means being within 6 feet of a person with COVID-19 while not wearing adequate personal protective equipment for ≥10 minutes. For example, walking by someone in a store is not considered close contact."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

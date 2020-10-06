@@ -1,0 +1,35 @@
+{
+  "id": "e4f0b386-7c28-4a36-8dd0-60c11e9b9b11",
+  "name": "Knowledge.FAQ.VA_FAQ.What_are_the_most_re",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "For those with access to the internet, the best sources of up-to-date information are the Virginia Department of Health website and the Centers for Disease Control and Prevention website. You can also call 877-ASK-VDH3 for additional information."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

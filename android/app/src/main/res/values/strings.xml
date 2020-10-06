@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2020 Google LLC
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+  <plurals name="possible_exposure_subheading">
+    <item quantity="zero">COVIDWISE estimates that you were last exposed today.</item>
+    <item quantity="one">COVIDWISE estimates that you were last exposed %1$d day ago.</item>
+    <item quantity="other">COVIDWISE estimates that you were last exposed %1$d days ago.</item>
+  </plurals>
+
+  <string name="app_name">COVIDWISE</string>
+
+  <string name="btn_start">Get Started</string>
+
+  <string name="btn_turn_on">Continue</string>
+
+  <string name="btn_done">Done</string>
+
+  <string name="btn_not_now">Don\'t Enable</string>
+
+  <string name="generic_error_message">Internal error, please try again.</string>
+
+  <string name="onboarding_welcome_text">Welcome to COVIDWISE</string>
+
+  <string name="onboarding_start_text">"Thanks for downloading COVIDWISE, the Virginia Department of Health's (VDH) COVID-19 exposure notification app. Using this app is 100% voluntary. No GPS, location information, or personal identifiers will ever be collected or stored.
+\n\nYour device will share anonymous tokens via Bluetooth with other COVIDWISE users. If another user you've been nearby tests positive for COVID-19 within a 14-day period, your app will notify you.
+\n\nIf you test positive, you can easily and anonymously notify others to help stop the spread of COVID-19."</string>
+
+  <string name="onboarding_privacy_policy_link">For more information, read our Privacy Policy: <a href="https://www.vdh.virginia.gov/covidwise/privacy-policy">Virginia Department of Health - Privacy Policy</a></string>
+
+  <string name="onboarding_opt_in_title">Enable Exposure Notifications</string>
+
+  <string name="onboarding_opt_in_text">"Enabling exposure notification is your choice. It must be enabled for the app to receive exposure notifications or to notify others that you have tested positive for COVID-19. You can disable this feature at any time.
+    \n\nYour privacy is protected. COVIDWISE only shares anonymous tokens with other app users. These tokens only collect data, such as the date, time, and signal strength and duration of proximity, and are not linked to your identity or location. Your personal information is never collected or shared with other COVIDWISE users.
+    \n\nIn the event another user you have been nearby tests positive for COVID-19, you can be notified that you are at risk of exposure.
+    \n\nIf you test positive for COVID-19, you control if you want to submit a positive test result to COVIDWISE, which will then notify other users if they were at risk. Doctors and laboratories are required to report positive COVID-19 test results to VDH. VDH staff will contact you if you test positive to provide guidance to help keep yourself and others safe.
+    \n\nTo learn more about COVID-19 in Virginia and associated symptoms, please visit: <a href="https://www.vdh.virginia.gov/coronavirus/">https://www.vdh.virginia.gov/coronavirus</a>   "
+    \n\nYou can manage Exposure Notifications in Settings > Google > COVID-19 Exposure Notifications</string>
+
+  <string name="onboarding_finish_title">It\'s Important To Your Community To Share A Positive Result</string>
+
+  <string name="onboarding_finish_message">"If you test positive for COVID-19, you can choose to share your result.
+\n\nThis is how other COVIDWISE users in Virginia know they were exposed to someone who tested positive.
+\n\nSharing this information helps stop the spread of the virus."</string>
+
+  <string name="notify_turn_on_exposure_notifications_header">You can\'t share your positive test results until exposure notifications are turned on.</string>
+
+  <string name="turn_on_exposure_notifications_action">Turn on Exposure Notifications</string>
+
+  <string name="exposure_notifications_are_turned_off">Exposure Notifications are turned off</string>
+
+  <string name="exposure_notifications">Exposure Notifications</string>
+
+  <string name="past_exposures">Past Exposures</string>
+
+  <!--  <string name="actual_copy">[Actual copy to be provided by Public Health Authority]</string>-->
+
+  <string name="possible_exposure">Possible Exposure</string>
+
+  <string name="no_exposures">No Exposures Detected</string>
+
+  <string name="exposures_found">Exposures Detected</string>
+
+  <string name="on">On</string>
+
+  <string name="off">Off</string>
+
+  <string name="home_tab">Home</string>
+
+
+  <!--
+    <string name="main_toolbar_text">VA VIRGINIA DEPT OF HEALTH</string>
+  -->
+  <string name="main_toolbar_text">COVIDWISE</string>
+
+  <string name="tested_positive_text">Tested positive\nfor COVID-19?</string>
+
+  <string name="home_tab_exposures_text">Exposures</string>
+
+  <string name="home_tab_exposures_blank_text">Home</string>
+
+  <string name="home_tab_notify_text">Notify Others</string>
+
+  <string name="home_tab_notify_debug_text">Debug</string>
+
+  <string name="home_tab_notify_virtual_agent_text">Virtual VDH</string>
+
+  <string name="home_tab_virtual_agent">Virtual VDH</string>
+
+  <string name="virtual_agent_title_text">Virtual VDH</string>
+
+  <string name="btn_next">Next</string>
+
+  <string name="btn_cancel">Cancel</string>
+
+  <string name="navigate_up">Navigate up</string>
+
+  <string name="exposure_about_title">About Exposure Notifications</string>
+
+  <string name="exposure_about_description">Enabling exposure notifications is your choice. It can be disabled by you at any time. It must be enabled for the app to receive exposure notifications or to notify others that you tested positive for COVID-19.
+    \n\nYour privacy is protected. COVIDWISE only shares anonymous tokens with other app users. These tokens are not linked to your identity or location. Your personal information is not collected or shared with other COVIDWISE users. Information from the anonymous tokens, such as the date, time, and signal strength and duration of proximity are collected. These details are not shared with other app users and are not tied to your personal identity.
+    \n\nIn the event another user you have been nearby tests positive for COVID-19, you can be notified that you are at risk of exposure. You control if you want to submit a positive test result to COVIDWISE, which will then notify other users if they were at risk.
+    \n\nDoctors and laboratories are required to report positive COVID-19 test results to VDH. VDH staff will contact you if you test positive to provide guidance to help keep yourself and others safe.
+    \n\nTo learn more about COVID-19 in Virginia and associated symptoms, please visit</string>
+
+  <string name="exposure_about_description_ext"><a href="https://www.vdh.virginia.gov/coronavirus/">https://www.vdh.virginia.gov/coronavirus</a></string>>
+
+  <string name="exposure_about_settings_button_pre_text">You can manage Exposure Notifications in Settings > Google > COVID-19 Exposure Notifications.</string>
+
+  <string name="exposure_about_settings_button_text">Settings</string>
+
+  <string name="exposure_about_detail">
+    These notifications are designed to notify you if you\'ve been exposed to a user who later reports themselves as testing positive for COVID-19. You can choose to turn off these notifications at any time.
+    \n\nExposure notifications rely on the sharing and collecting of random IDs. These IDs are a random string of numbers that won\'t identify you to other users and change many times a day to protect your privacy.
+    \n\nYour device will collect and share random IDs with nearby devices. This app can notify you if you\'ve been near someone who has reported a positive COVID-19 test result.
+    \n\nIf you test positive for COVID-19, you can help your community by reporting your test result.
+    \n\nIf you\'re exposed, the time, approximate date, and distance of your exposure are shared with this app. This helps health experts better understand the spread of COVID-19.
+  </string>
+
+  <string name="exposure_learn_more_title">About verified test results</string>
+
+  <!--  <string name="exposure_learn_more_description">[Actual copy to be provided by Public Health Authority]</string>-->
+
+  <string name="verify_test_result_title">Confirm Your Positive Result</string>
+
+  <string name="wait_if_retry_exhausted_text">Please wait for %1$d minutes before retrying.</string>
+
+  <string name="verify_test_result_subtitle">VDH contacts everyone who has received a positive test result for COVID-19 and their staff will provide a unique personal identification number (PIN) to that individual. This is used to prevent false reporting of positive tests within the app.
+</string>
+  <string name="verify_test_result_no_link_msg">The app does not link the PIN with your name.</string>
+  <string name="verify_test_result_subtitle_after_pin"></string>
+
+  <string name="enter_your_test_identifier">Test identifier</string>
+
+  <string name="first_name_label">First Name</string>
+
+  <string name="last_name_label">Last Name</string>
+
+  <string name="year_of_birth_label">Year of birth</string>
+
+  <string name="share_test_identifier_help">The unique test identifier that came with your COVID-19 test must be used to verify your positive test result.</string>
+
+  <string name="test_date_label">Date of test</string>
+
+  <string name="share_test_date_help">The test date helps the app know when you may have been contagious and notify the right people of possible exposure.</string>
+
+  <string name="share_error">Unable to share</string>
+
+  <string name="share_complete_title">You\'re all done!</string>
+
+  <!--  <string name="share_complete_thankyou">Thank you for confidentially sharing your result.</string>-->
+
+  <!--  <string name="share_complete_detailed_text">Your name is not tied to your report and you will not hear from any other COVIDWISE users. However, your information may help identify new cases of COVID-19, as other app users receive exposure notifications and are tested. This is an important step in working together to contain COVID-19 in our communities.</string>-->
+
+
+  <string name="share_complete_thankyou">Thank You For Confidentially Sharing Your Result.</string>
+
+  <string name="share_complete_detailed_text">Your last 14 days of anonymous tokens have been submitted. COVIDWISE users that you have been near may be notified within the next day.
+  \n\nYour name is not tied to your report and you will not hear from other COVIDWISE users. However, your information may help identify new cases of COVID-19, as other app users receive exposure notifications and are tested.
+  \n\nThank you for doing your part to keep Virginians healthy and safe!</string>
+
+  <string name="share_complete_detail">Your last 14 days of anonymous tokens have been submitted. Your name is not tied to your report and you will not hear from any other COVIDWISE users. However, your information may help identify new cases of COVID-19, as other app users receive exposure notifications and are tested. This is an important step in working together to contain COVID-19 in our communities.</string>
+
+  <string name="share_not_complete_title">Test result not shared</string>
+
+  <!--  <string name="share_not_complete_detail">[Actual copy to be provided by Public Health Authority]</string>-->
+
+  <string name="share_not_complete_description">Your test result wasn\'t shared. This test result is saved in the app. You can share or delete your test result at any time.</string>
+
+  <string name="share_test_result">Submit Positive Result</string>
+
+  <string name="share_test_result_title">Share A Positive Result</string>
+
+  <string name="share_test_result_description">If you test positive for COVID-19, you can choose to share your result.
+\n\nOther COVIDWISE users you were near over the past 14 days may be notified of exposure. Your name will not be shared with any app users. Future exposures will not be notified based on this submission.
+\n\nPlease self-isolate if you have tested positive.</string>
+
+  <string name="share_begin_title">Before You Get Started</string>
+
+  <string name="share_begin_detail">The 100% Transparency Checklist</string>
+
+  <string name="share_begin_description">
+    \n\n☑︎ VDH is serious about maintaining your privacy and trust.
+    \n\n☑︎ You must enable exposure notifications for this app to work.
+    \n\n☑︎ You can disable exposure notifications at any time.
+    \n\n☑︎ Sharing a positive COVID-19 result with the COVIDWISE community is your choice and is only done with your consent.
+    \n\n☑︎ Your personal information (name, age, gender, race, etc.) is never collected or shared with other users. Date of birth is requested when confirming a lab result; this data is not part of the app.
+    \n\n☑︎ Your location is never collected in COVIDWISE.
+    \n\n☑ Exposures are determined between app users using random Bluetooth keys that are not tied to your identity.
+    \n\n☑︎ An exposure in the app includes a risk calculation. This means that your device has found a match between other users tokens you have been nearby, including the amount of time spent in proximity with these tokens and the strength of Bluetooth signal as an estimate of distance.  Risk values are not tied to your personal identity and are not shared with other app users.
+    \n\n☑︎ Your participation helps to contain COVID-19 within your community.
+  </string>
+
+  <string name="share_learn_more_title">About test identifiers</string>
+
+  <!--  <string name="share_learn_more_description">[Actual copy to be provided by Public Health Authority]</string>-->
+
+  <string name="share_review_title">Share positive result</string>
+
+  <string name="share_review_description">Share Securely</string>
+
+  <string name="share_review_positive_test">Diagnosis</string>
+
+  <string name="share_review_positive_test_covid">COVID-19 Positive</string>
+
+  <string name="share_review_date">Date of test</string>
+
+  <string name="btn_share_positive">Share Positive Result</string>
+
+  <string name="btn_share_already_shared">Test result shared</string>
+
+  <string name="btn_delete_positive">Delete Test Result</string>
+
+  <string name="dialog_delete_positive_test_title">Delete test result?</string>
+
+  <string name="dialog_delete_positive_test_description">Your test result will be deleted from this app</string>
+
+  <string name="dialog_delete_positive_test_action">Delete</string>
+
+  <string name="positive_test_results">Submitted Reports</string>
+
+  <string name="positive_test_results_text">RESULTS YOU PREVIOUSLY SUBMITTED</string>
+
+  <string name="no_positive_test_results">No positive test results</string>
+
+  <string name="positive_test_result_status_shared">Shared</string>
+
+  <string name="incorrect_pin_title_text">Unable to Confirm Positive Diagnosis</string>
+
+  <string name="max_retries_exhausted_title_text">Maximum Retries Exhausted</string>
+
+  <string name="incorrect_pin_message_text">We are unable to confirm your positive test. This may happen if the PIN was entered incorrectly. Please re-enter your six-digit PIN.</string>
+
+  <string name="max_retries_exhausted_message_text">You have entered incorrect PIN thrice. Please wait for 10 minutes before next try.</string>
+
+  <string name="vdh_pin_verified_message_text">Success!
+  \nYour positive test has been confirmed by VDH.</string>
+
+  <string name="positive_test_result_status_not_shared">Not shared</string>
+
+  <string name="positive_test_shared_title">Shared COVID-19 test result</string>
+
+  <string name="positive_test_not_shared_title">COVID-19 test result</string>
+
+  <!--  <string name="positive_test_description">[Actual copy to be provided by Public Health Authority]</string>-->
+
+  <string name="debug_master_switch">Exposure Notifications API Master</string>
+
+  <string name="debug_test_exposure_category">Test exposure notification</string>
+
+  <string name="debug_test_exposure_description">This will notify the app that you have been exposed so you can see the exposure experience in the app UI until you reset.</string>
+
+  <string name="debug_test_exposure_notify_button_text">Add test exposures</string>
+
+  <string name="debug_exposure_reset_button_text">Reset exposures</string>
+
+  <string name="debug_test_exposure_reset_success">Done</string>
+
+  <string name="debug_matching_category">Matching</string>
+
+  <string name="debug_provide_keys_description">This will enqueue a background job to provide test diagnosis keys into the exposure notifications API from the server.</string>
+
+  <string name="debug_provide_keys_button_text">Provide From Server</string>
+
+  <string name="debug_start_scheduler_text">Start Schedulers</string>
+
+  <string name="debug_share_test_upload_text">Test Upload</string>
+
+  <string name="debug_share_test_download_keys_text">Test Download</string>
+
+  <string name="debug_provide_keys_enqueued">Enqueued background job</string>
+
+  <string name="debug_network_mode">Enable Diagnosis Key Up/Downloads</string>
+
+  <string name="debug_network_mode_category">Diagnosis Key Server</string>
+
+  <string name="debug_network_mode_description">This enables this app to share diagnosis keys with a test server. When disabled, the app does not upload or download keys.</string>
+
+  <string name="debug_network_mode_description_blank">TODO: Integration of Virtual Agent</string>
+
+  <string name="debug_network_mode_default_uri">App was built with default URIs. Non-default URIs are required to use servers.</string>
+
+  <string name="notifications_disabled_info">When exposure notifications are turned off, you won\’t be notified if you\'re exposed to COVID-19</string>
+
+  <string name="notifications_enabled_info">If this app detects an exposure that meets VDH\'s criteria, you will receive a push notification and additional information will be displayed here.</string>
+
+  <string name="notifications_enabled_possible_exposure_info1">You have likely been exposed to someone who has tested positive for COVID-19.\n \n</string>
+
+  <string name="notifications_enabled_possible_exposure_info2"> To learn more, you can:
+\n•Visit the Virtual VDH tab within this app
+\n•Learn more online at <a href="https://www.vdh.virginia.gov/coronavirus/">www.vdh.virginia.gov/coronavirus</a>
+    \n•Contact the VDH Call Center at <b href="877-275-8343">877-ASK-VDH3 (877-275-8343)</b></string>
+
+  <string name="positive_test_result_type">COVID-19</string>
+
+  <string name="info_saved_locally">
+    Sample Public Health Authority App received info on %1$s.
+    \n\nThis report has been saved to this app and you can access it at any time.
+  </string>
+
+  <string name="verified_result_explanation">This person\'s test result was verified. You were near this person on %1$s.</string>
+
+  <string name="verified_result_next_steps">Next steps: [Actual copy to be provided by Public Health Authority]</string>
+
+  <string name="done">Done</string>
+
+  <string name="reference_only"> </string>
+
+  <string name="notification_title">Possible COVID-19 Exposure</string>
+
+  <string name="notification_message">You have likely been exposed to someone who has tested positive for COVID-19.</string>
+
+  <string name="notification_message_zero_days">COVIDWISE estimates that you were last exposed today.</string>
+
+  <string name="notification_message_one_day">COVIDWISE estimates that you were last exposed %1$d day ago.</string>
+
+  <string name="notification_message_two_days">COVIDWISE estimates that you were last exposed %1$d days ago.</string>
+
+  <string name="notification_message_tap_to_learn">Tap to learn more.</string>
+
+  <string name="notification_channel_name">Exposure Notification</string>
+
+  <string name="notification_channel_description">Exposure notification alerts.</string>
+
+  <string name="learn_more">Learn more at <a href="https://www.vdh.virginia.gov/coronavirus/">https://www.vdh.virginia.gov/coronavirus</a></string>
+
+  <string name="debug_version_app">App: %1$s</string>
+
+  <string name="debug_version_gms">Google Play services: %1$s</string>
+
+  <string name="debug_version_not_available">Not available</string>
+
+  <string name="debug_matching_manual_button_text">Provide Manually</string>
+
+  <string name="debug_matching_manual_button_description">Manually get and provide keys locally for testing matching.</string>
+
+  <string name="debug_matching_view_item_date">Date: %1$s</string>
+
+  <string name="debug_matching_view_item_key">KeyData: %1$s</string>
+
+  <string name="debug_matching_view_item_interval_number">RollingStartIntervalNumber: %1$s</string>
+
+  <string name="debug_matching_view_item_rolling_period">RollingPeriod: %1$s</string>
+
+  <string name="debug_matching_view_item_transmission_risk">TransmissionRiskLevel: %1$s</string>
+
+  <string name="debug_matching_view_tab">View Keys</string>
+
+  <string name="debug_matching_provide_tab">Provide Keys</string>
+
+  <string name="debug_matching_provide_single">Single</string>
+
+  <string name="debug_matching_provide_batch">Batch</string>
+
+  <string name="debug_matching_provide_file">File</string>
+
+  <string name="debug_matching_input_file_chooser_title">Select key file</string>
+
+  <string name="debug_matching_single_error">Error, bad single input. Make sure all fields are provided and valid.</string>
+
+  <string name="debug_matching_single_parse_error">Could not parse as an 32 bit integer</string>
+
+  <string name="debug_matching_file_error">Error, bad file input. Make sure to provide a valid file.</string>
+
+  <string name="debug_matching_token_error">Error, bad token. Please provide a token.</string>
+
+  <string name="debug_matching_provide_success">Provided</string>
+
+  <string name="debug_matching_provide_error_disabled">Failed, API must be enabled</string>
+
+  <string name="debug_matching_provide_error_unknown">Failed to provideDiagnosisKeys</string>
+
+  <string name="qr_scan_button_default">Please scan a barcode</string>
+
+  <string name="qr_back_button_text">Back</string>
+
+  <string name="qr_scan_permission_failed">Camera permission is required</string>
+
+  <string name="qr_scan_detector_not_operational">QR scanning not available on this device</string>
+
+  <string name="debug_matching_provide_category_input">Input</string>
+
+  <string name="debug_matching_provide_input_method_hint">Input method</string>
+
+  <string name="debug_matching_provide_single_key_icon_description">Scan QR Code</string>
+
+  <string name="debug_matching_provide_single_key_hint">Temporary exposure Key</string>
+
+  <string name="debug_matching_provide_single_interval_number_hint">Interval number</string>
+
+  <string name="debug_matching_provide_single_rolling_period_hint">Rolling period</string>
+
+  <string name="debug_matching_provide_single_transmission_risk_hint">Transmission risk level</string>
+
+  <string name="debug_matching_provide_file_hint">Choose a file</string>
+
+  <string name="debug_matching_provide_submit_category">Provide to API</string>
+
+  <string name="debug_matching_provide_token_hint">Token</string>
+
+  <string name="debug_matching_token_digits" translatable="false">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</string>
+
+  <string name="debug_matching_provide_button_text">Provide</string>
+
+  <string name="debug_matching_matching_title">Manual Matching</string>
+
+  <string name="debug_matching_view_share_success">Copied key hex to clipboard</string>
+
+  <string name="debug_matching_view_share_failure">Unable to share</string>
+
+  <string name="debug_matching_view_rejected">Unable to get keys</string>
+
+  <string name="debug_matching_view_api_not_enabled">API must be enabled</string>
+
+  <string name="debug_matching_provide_scan_error">Error parsing QR data</string>
+
+  <string name="debug_matching_signature_info_category">Diagnosis Key File Signatures</string>
+
+  <string name="debug_matching_signature_info_help">When using the \"Single\" option above, this app
+    creates Diagnosis Key files, signed with a randomly generated key. To use the Diagnosis Key
+    File, the Exposure Notifications API must be in debug mode and needs info about the signature.
+    Tap each item below to copy it; then paste into Exposure Notifications debug controls. NOTE:
+    When using the \"File\" option above, provide the signature info that your file is signed with
+    instead of the below info.</string>
+
+  <string name="debug_matching_public_key_caption">Public key</string>
+
+  <string name="debug_matching_package_caption">App package name</string>
+
+  <string name="debug_matching_key_id_caption">Verification key ID</string>
+
+  <string name="debug_matching_key_version_caption">Verification key version</string>
+
+  <string name="debug_matching_signature_info_copied_text">Copied %1$s</string>
+
+  <string name="verifying">Verifying...</string>
+
+  <string name="uploading">Uploading...</string>
+
+  <string name="pincode">Pin</string>
+
+  <string name="submission_date">Submission Date</string>
+
+  <string name="getstarted1">VDH is serious about maintaining your privacy and trust.</string>
+
+  <string name="getstarted2">You must enable exposure notifications for this app to work.</string>
+
+  <string name="getstarted3">You can disable exposure notifications at any time.</string>
+
+  <string name="getstarted4">Sharing a positive COVID-19 result with the COVIDWISE community is your choice and is only done with your consent.</string>
+
+  <string name="getstarted5">Your location and personal information (name, age, gender, race, etc.) is NEVER collected by COVIDWISE or shared with other users.</string>
+
+  <string name="getstarted6">Exposures are determined between app users using anonymous tokens that are never tied to your identity.</string>
+
+  <string name="getstarted7">An exposure in the app includes a risk calculation. This means that your device has found a match between other users\' tokens you have been nearby, including the amount of time spent in proximity with these tokens and the strength of Bluetooth signal as an estimate of distance.  Risk values are not tied to your personal identity and are not shared with other app users.</string>
+
+  <string name="getstarted8">Your participation helps to contain COVID-19 within your community. </string>
+
+<!--  <string name="getstarted9">Your participation helps to contain COVD-19 within your community.</string>-->
+
+<!--  <string name="privacy_policy">For more information, read our Privacy Policy.</string>-->
+
+  <string name="please_enter_digits">Please enter your six-digit PIN:</string>
+
+  <string name="pin_less_than_6_digits">Enter all digits</string>
+
+  <string name="how_it_works">How It Works</string>
+
+  <string name="turned_on">Exposure Notifications are Turned On</string>
+
+  <string name="keys_not_available">Keys not yet available</string>
+
+  <string name="keys_not_available_description">Your anonymous keys are not yet available. This happens if you have installed this app in the last 24 hours. Please resubmit tomorrow from the Notify Others screen.</string>
+
+</resources>

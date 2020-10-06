@@ -1,0 +1,35 @@
+{
+  "id": "32227c4f-9c64-42c9-aeb1-5c50713fd95f",
+  "name": "Knowledge.FAQ.VA_FAQ.Will_warm_weather_st",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "It is not yet known whether weather and temperature affect the spread of COVID-19. Some other viruses, like the common cold and flu, spread more during cold weather months, but that does not mean it is impossible to become sick with these viruses during other months. From the evidence so far, the COVID-19 virus can be transmitted in ALL AREAS, including areas with hot and humid weather."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

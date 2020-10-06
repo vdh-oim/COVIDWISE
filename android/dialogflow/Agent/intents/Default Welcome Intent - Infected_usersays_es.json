@@ -1,0 +1,41 @@
+[
+  {
+    "id": "f5b32271-bf4e-4df4-aaf6-4523f134a588",
+    "data": [
+      {
+        "text": "Infectada",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "9ca10153-7a45-42ef-b2de-19af00e914b1",
+    "data": [
+      {
+        "text": "Probada positiva",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1d7cf7c7-9f1b-4ca2-944f-a865f780ba91",
+    "data": [
+      {
+        "text": "Yo recibí un resultado positivo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

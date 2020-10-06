@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ce6b246e-7482-4845-9f8c-e8b27bee83b2",
+    "data": [
+      {
+        "text": "Expuesta",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "3f31481d-a1b5-4a01-afb6-563f8fcb41d6",
+    "data": [
+      {
+        "text": "Notificación de exposición",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "f9077414-38d9-4270-9a4c-660e3ae0aea1",
+    "data": [
+      {
+        "text": "Yo recibí una notificación de exposición",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

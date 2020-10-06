@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020 Google LLC
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/toolbar_color">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:gravity="center|left"
+      android:textSize="20sp"
+      android:layout_marginLeft="@dimen/dp24"
+      android:fontFamily="sans-serif-medium"
+      android:textStyle="normal"
+      android:textColor="@color/white"
+      android:text="@string/share_complete_title" />
+
+  </LinearLayout>
+
+  <androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:fillViewport="true"
+    android:isScrollContainer="false">
+
+    <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dp10"
+      app:cardCornerRadius="5dp">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/padding_large">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dp22"
+          android:paddingBottom="@dimen/dp9"
+          android:gravity="center|left|top"
+          android:orientation="horizontal">
+
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_clipboard_check" />
+
+          <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/share_complete_thankyou"
+            android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+          android:id="@+id/share_complete_detail"
+          android:textStyle="normal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/roboto_regular"
+          android:letterSpacing="0.03125"
+          android:lineSpacingExtra="7sp"
+          android:text="@string/share_complete_detailed_text"
+          android:textColor="@color/covid_color"
+          android:textSize="16sp" />
+
+      </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+  </androidx.core.widget.NestedScrollView>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/color_dark_blue"
+    android:gravity="right">
+
+    <Button
+      android:id="@+id/share_done_button"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:textColor="@color/white"
+      app:strokeColor="@color/white"
+      app:strokeWidth="0.5dp"
+      android:text="@string/btn_done"
+      android:layout_marginRight="@dimen/dp16"
+      android:backgroundTint="@color/otpview_color"/>
+
+  </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "a4092a29-b8cd-42ad-8e4e-41efdb7521af",
+    "data": [
+      {
+        "text": "15",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d3b448bb-5cfb-4bde-bf18-a2fd741787f8",
+    "data": [
+      {
+        "text": "It has been ",
+        "userDefined": false
+      },
+      {
+        "text": "7 days",
+        "meta": "@sys.duration",
+        "alias": "duration",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "48296613-e6e3-4ec7-8691-11af2af71b64",
+    "data": [
+      {
+        "text": "its been ",
+        "userDefined": false
+      },
+      {
+        "text": "4 days",
+        "meta": "@sys.duration",
+        "alias": "duration",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "84553dd1-3fe7-4e98-89a4-f271ffa47bfb",
+    "data": [
+      {
+        "text": "2 days",
+        "meta": "@sys.duration",
+        "alias": "duration",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

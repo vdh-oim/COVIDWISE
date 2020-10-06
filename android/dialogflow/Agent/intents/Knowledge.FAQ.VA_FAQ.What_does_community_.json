@@ -1,0 +1,35 @@
+{
+  "id": "2ea142cc-9f46-4bc4-8671-c12601a9c8cb",
+  "name": "Knowledge.FAQ.VA_FAQ.What_does_community_",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected. Virginia is now reporting widespread community transmission, which means there are cases across the state where individuals are not sure how or where they became infected."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

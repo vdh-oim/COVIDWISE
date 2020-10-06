@@ -1,0 +1,41 @@
+[
+  {
+    "id": "0978c812-b2a5-4531-a25c-cf95f4b1062e",
+    "data": [
+      {
+        "text": "Infected",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "4bd09b38-241d-47a2-b289-eb3ab4ab9901",
+    "data": [
+      {
+        "text": "tested positive",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f7d2c374-6bf3-4af7-8296-cd3b7946430e",
+    "data": [
+      {
+        "text": "I received a positive test result",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

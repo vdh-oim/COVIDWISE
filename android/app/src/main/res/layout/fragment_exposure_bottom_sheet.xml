@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020 Google LLC
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:paddingHorizontal="@dimen/padding_normal"
+  android:paddingVertical="@dimen/padding_small">
+
+  <androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:text="@string/possible_exposure"
+        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+<!--      <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="@dimen/padding_small"-->
+<!--        android:text="@string/actual_copy"-->
+<!--        android:textAppearance="?attr/textAppearanceBody1" />-->
+
+      <TextView
+        android:id="@+id/possible_exposure_subheading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingHorizontal="@dimen/padding_small"
+        tools:text="" />
+
+      <include layout="@layout/horizontal_divider" />
+
+      <TextView
+        android:id="@+id/verified_result_explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_normal"
+        android:paddingHorizontal="@dimen/padding_small"
+        tools:text="@string/verified_result_explanation"
+        android:textColor="@color/covid_color"
+        android:textAppearance="?attr/textAppearanceBody1" />
+
+      <Button
+        android:id="@+id/learn_more_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/learn_more"
+        style="@style/Widget.MaterialComponents.Button.TextButton" />
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingHorizontal="@dimen/padding_small"
+        android:textColor="@color/covid_color"
+        android:text="@string/verified_result_next_steps"
+        android:textAppearance="?attr/textAppearanceBody1" />
+
+      <include layout="@layout/horizontal_divider" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_normal"
+        android:orientation="horizontal">
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_info_black_24dp"/>
+
+        <TextView
+          android:id="@+id/info_status"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:paddingHorizontal="@dimen/padding_small"
+          android:textAppearance="?attr/textAppearanceBody2"
+          android:textColor="?attr/colorControlNormal" />
+
+      </LinearLayout>
+
+      <Button
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/padding_normal"
+        android:layout_marginVertical="@dimen/padding_small"
+        android:text="@string/done"
+        android:backgroundTint="@color/otpview_color"/>
+
+<!--
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/padding_large"
+        android:background="@drawable/btn_bg"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="@dimen/padding_normal">
+
+        <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_alignParentEnd="true"
+          android:src="@drawable/btn_arrow"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.95"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.5"
+          android:visibility="gone"/>
+
+        <TextView
+          android:id="@+id/done_button"
+          android:textStyle="bold"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:gravity="center"
+          android:text="@string/btn_done"
+          android:textColor="@color/text_color"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+-->
+
+    </LinearLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
